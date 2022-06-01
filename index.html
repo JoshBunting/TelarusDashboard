@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Telarus Display Doard
+  </title>
+  <!-- Boot Strap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Css Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- My Css  -->
+  <link rel="stylesheet" type="text/scss" href="clock.scss">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+<!-- Clock -->
+  <header>
+    <div class="row align-items-center">
+      <div class="col-12">
+        <div id="timeClock" class="time"></div>
+        <div id="date" class="date"></div>
+      </div>
+  </header>
+
+<!-- Backgrounds -->
+  <div id="content" class="abs-zero Backgroung">
+    <div id="background-underlay-1" class="abs-zero"
+      style="background: url('https://picsum.photos/3840/2160?random=1.jpg') center center / cover no-repeat rgb(0, 0, 0); z-index: 10;">
+    </div>
+    <div id="background-underlay-2" class="abs-zero animate__animated animate__fadeIn animate__slower"
+      style="background: url('https://picsum.photos/3840/2160?random=2.jpg') center center / cover no-repeat rgb(0, 0, 0); z-index: 10;">
+    </div>
+    <!-- <div id="grayout"></div> -->
+  </div>
+
+<!-- Info Cards -->
+  <div id="info">
+    <div id="info-1" class="Kudos abs-zero animate__animated animate__fadeInRight animate__slower">
+      <div class="halfOverlay animate__animated"></div>
+      <iframe src="Images/KudosDemo.png"
+        title="Kudos" scrolling="no" allowtransparency="true" class="popup"></iframe>
+    </div>
+    <div id="info-2" Class="Cal abs-zero animate__animated animate__fadeOutLeft animate__slower">
+      <iframe
+        src="https://outlook.live.com/calendar/0/published/00000000-0000-0000-0000-000000000000/45bceedb-6305-4aa0-9e95-ee4ec673c685/cid-9436A3B932AC541B/calendar.html"
+        title="Kudos" allowtransparency="true" class="popup" height="600" width="1100"></iframe>
+    </div>
+  </div>
+
+<!-- Weather and Logo -->
+  <footer>
+    <div class="row align-items-center">
+      <div class="col-4 weather textLeft">
+        <div id="ww_c6ee70c07ca1b" v='1.20' loc='id' a='{"t":"responsive","lang":"en","ids":["wl3688"],"cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"7","sl_sot":"fahrenheit","sl_ics":"one_a","font":"Times","el_nme":3}'>Weather Data Source: <a href="https://sharpweather.com/weather_west_jordan/" id="ww_c6ee70c07ca1b_u" target="_blank">West Jordan Weather</a></div><script async src="https://srv2.weatherwidget.org/js/?id=ww_c6ee70c07ca1b"></script>
+        <sub>Made by Joshua Bunting</sub>
+      </div>
+      <div class="col">
+      </div>
+      <div class="col-3">
+        <div class="telarusLogo">
+          <img src="images/Telarus-Logo-01.svg" width="450">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <!-- My Java -->
+  <script type="text/javascript" src="Clock.js"></script>
+  <script type="text/javascript" src="BackgoundUpdater.js"></script>
+  <script type="text/javascript" src="Info.js"></script>
+</body>
+
+</html>
